@@ -75,6 +75,42 @@ Windows, Linux, the operating system in your phone or even your microwave.
 
 The main job of an operating system is to serve as a conductor, managing multiple processes and a finite amount of resources.
 
+#### The command line interface.
+
+You might imagine an operating system (or as it is sometimes depicted in hollywood ala Jurassic Park) as a terminal with some text. This is what we call the command line interface, which is at the highest level just another program. Linux, Mac, and even Windows have built-in terminals that let us type in text to run programs and commands. This is one way we can interface with the operating system, by requesting programs to be loaded into memory and run in a text-based environment. Modern operating systems of course have GUI's.
+
+##### Example termiminal commands
+
+These are some 'programs' that can be run on the terminal.
+* ls
+* cd
+
+Example shell script
+
+```
+# Lines that start with a 'hashmark' or 'pound sign'
+# are comments that are ignored.
+# You should use them liberally!
+
+# This line is special and tells us we have an executable script.
+#!/bin/bash
+
+# Output hello and two items read in as command-line arguments
+echo "Hello $1 $2"
+echo "What is your age?"
+# Read in a value
+read myAge
+echo "That is great you are $myAge years old!"
+```
+
+Some other useful programs
+
+* ssh
+
 ### Computer Architecture
 
 The third of core topics is computer architecture.
+
+#### The brain of the computer
+
+The CPU is the brain of the computer. It has at least one central processing unit (CPU) (sometimes called a core) which executes exactly one instruction at a time. We will learn the CPU may be processing quite a bit of data at once, but it is essentially executing one instruction at a time very quickly!
