@@ -63,7 +63,7 @@ int main(){ // A function call, that is also the entry point to our program.
 
 `tbd put the assembly code of hello world here`
 
-`tbd objdump`
+`tbd objdump output -- Essentially a tool that lets you peak at functions in an object file.`
 
 ### Operating Systems
 
