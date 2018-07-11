@@ -1,2 +1,7 @@
 # ComputerSystems
-Notes on Computer Systems Lectures
+
+Some notes from Computer Systems Lectures.
+
+Consider these a stream of conciousness, very rough draft of what we talked about for the day. :)
+
+The slides and other resources are likely the best source of information.
