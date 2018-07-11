@@ -1,7 +1,7 @@
 # Overview
 
-Lecture Page: http://www.mshah.io/comp/Summer18/Systems5007/Lectures/1/lecture.html
-Lecture Slides: https://docs.google.com/presentation/d/15Z-RXvam62ue-Sid4Ubc50shoiU8Sy8JOOm-YNQlUXo/edit#slide=id.g39c697e210_0_95
+* Lecture Page: http://www.mshah.io/comp/Summer18/Systems5007/Lectures/1/lecture.html
+* Lecture Slides: https://docs.google.com/presentation/d/15Z-RXvam62ue-Sid4Ubc50shoiU8Sy8JOOm-YNQlUXo/edit#slide=id.g39c697e210_0_95
 
 ## Introduction
 
