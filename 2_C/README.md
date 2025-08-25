@@ -1,9 +1,5 @@
 # Programming in C Primer
 
-* Lecture Page: http://www.mshah.io/comp/Summer18/Systems5007/Lectures/2/lecture.html
-* Lecture Slides: https://docs.google.com/presentation/d/1Ggk-NPzFvbd5JRq5GKO3yuOU9UGvf1mufoeUtcGe-Uc/edit?usp=sharing
-
-
 
 > "For infrastructure technology, C will be hard to displace" - Dennis Ritchie
 

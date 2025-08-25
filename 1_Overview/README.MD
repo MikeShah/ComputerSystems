@@ -1,8 +1,5 @@
 # Overview
 
-* Lecture Page: http://www.mshah.io/comp/Summer18/Systems5007/Lectures/1/lecture.html
-* Lecture Slides: https://docs.google.com/presentation/d/15Z-RXvam62ue-Sid4Ubc50shoiU8Sy8JOOm-YNQlUXo/edit#slide=id.g39c697e210_0_95
-
 ## Introduction
 
 Paul Allen and Bill Gates. Frances Allen. Turing and Church. All great computer scientists we can admire. All of these great computer scientists also did great work in systems.
