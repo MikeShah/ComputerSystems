@@ -32,7 +32,7 @@ The first of core topics is the compiler.
 
 Compile on the terminal with: `clang hello.c -o hello`
 
-```
+```c
 #include <stdio.h>
 
 int main(){
@@ -45,7 +45,7 @@ int main(){
 
 There is actually quite a bit going on in this code. Here is the same annotated example.
 
-```
+```c
 #include <stdio.h> // Include a library of code. This is done in the preprocessor step
 
 int main(){ // A function call, that is also the entry point to our program.
@@ -58,9 +58,20 @@ int main(){ // A function call, that is also the entry point to our program.
 
 #### What does assembly look like
 
-`tbd put the assembly code of hello world here`
+```asm
+main:
+ push   %rbp
+ mov    %rsp,%rbp
+ mov    $0x0,%edi
+ call   e <main+0xe>
+ mov    $0x0,%eax
+ pop    %rbp
+ ret
+```
 
-`tbd objdump output -- Essentially a tool that lets you peak at functions in an object file.`
+Using 'objdump' you can further see the output
+
+`tbd objdump output`
 
 ### Operating Systems
 
@@ -76,7 +87,7 @@ The main job of an operating system is to serve as a conductor, managing multipl
 
 You might imagine an operating system (or as it is sometimes depicted in hollywood ala Jurassic Park) as a terminal with some text. This is what we call the command line interface, which is at the highest level just another program. Linux, Mac, and even Windows have built-in terminals that let us type in text to run programs and commands. This is one way we can interface with the operating system, by requesting programs to be loaded into memory and run in a text-based environment. Modern operating systems of course have GUI's.
 
-##### Example termiminal commands
+##### Example terminal commands
 
 These are some 'programs' that can be run on the terminal.
 * ls
