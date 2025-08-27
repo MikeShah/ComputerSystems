@@ -71,7 +71,45 @@ main:
 
 Using 'objdump' you can further see the output
 
-`tbd objdump output`
+Compile the code (but do not generate an executable binary, just the binary)
+`clang -c hello.c`
+
+Retrieve the dissassembly
+`objdump -d hello.o`
+
+```
+hello.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:   55                      push   %rbp
+   1:   48 89 e5                mov    %rsp,%rbp
+   4:   48 83 ec 10             sub    $0x10,%rsp
+   8:   c7 45 fc 00 00 00 00    movl   $0x0,-0x4(%rbp)
+   f:   48 8d 3d 00 00 00 00    lea    0x0(%rip),%rdi        # 16 <main+0x16>
+  16:   e8 00 00 00 00          call   1b <main+0x1b>
+  1b:   31 c0                   xor    %eax,%eax
+  1d:   48 83 c4 10             add    $0x10,%rsp
+  21:   5d                      pop    %rbp
+  22:   c3                      ret
+```
+
+View the symbols (i.e. symbol table) using `objdump -t hello.o`
+
+``` 
+hello.o:     file format elf64-x86-64
+
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*  0000000000000000 hello.c
+0000000000000000 l    d  .text  0000000000000000 .text
+0000000000000000 l     O .rodata.str1.1 0000000000000017 .L.str
+0000000000000000 g     F .text  0000000000000023 main
+0000000000000000         *UND*  0000000000000000 puts
+```
+
+
 
 ### Operating Systems
 
