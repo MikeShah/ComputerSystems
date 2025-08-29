@@ -1,0 +1,8 @@
+Hello Folks!
+
+Welcome to this file that you
+have opened. I hope you are
+enjoying learning so much C!
+
+Sincerely,
+Me
