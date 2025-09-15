@@ -32,5 +32,4 @@ int main(){
 	StackFunc1();
 	
 	SomeOtherFunction();
-
 }
