@@ -12,6 +12,7 @@ int main(){
 	setValue(&a);
 	// What is 'a' here?
 	printf("a is: %d\n",a);
+	printf("a address: %p\n",(void*)&a);
 
 	return 0;
 }

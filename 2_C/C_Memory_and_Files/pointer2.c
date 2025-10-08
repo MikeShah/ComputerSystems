@@ -10,13 +10,9 @@ int main(){
     int* px = &x;
 
     // X's original value
-    printf("x is: %d\n",x);
-
-    // Modify px by dereferencing it
-    *px = 100;
-
-    // Hmm, what is x now?
-    printf("x is: %d\n",x);
+    printf("address of x         : %p\n",(void*)&x);
+    printf("px stores the address: %p\n",px);
+    printf("address of px        : %p\n",(void*)&px);
 
     return 0;
 }
