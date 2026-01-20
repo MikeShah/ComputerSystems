@@ -3,6 +3,10 @@
 // Basic example showcasing the 'idea' of simd instructions
 // which use wider registers.
 //
+// In this example, I'll demonstrate simply using an 'int64_t' which achieves the
+// same idea for this operation -- emulating a 'wider' set of bits to compare for
+// a faster 'memcmp' function.
+//
 // This example uses the 'memcmp' function. It is similar to 'strcmp' in
 // the <string.h> header, but it does not use the NULL terminator.
 // Rather it treats two 'buffers' as unsigned char (or uint8_t) data and compares each byte.
