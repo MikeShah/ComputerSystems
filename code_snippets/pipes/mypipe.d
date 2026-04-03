@@ -5,22 +5,22 @@ void main(){
 }
 
 void RunProcesses(string processName, string[] args){
-  auto p= pipeProcess("./infinite", Redirect.stdin);
+  auto p= pipeProcess(processName, Redirect.stdin);
   scope(exit) wait(p.pid);
 
   foreach(arg ; args){
     p.stdin.writeln(arg);
     p.stdin.flush();
+
   }
   p.stdin.close();
-
 }
 
 
 void RunProcess(string processName, string[] args){
   auto p= pipe();
 
-  auto pid = spawnProcess("./infinite",p.readEnd,stdout);
+  auto pid = spawnProcess(processName,p.readEnd,stdout);
   scope(exit) wait(pid);
 
   p.readEnd.close();
