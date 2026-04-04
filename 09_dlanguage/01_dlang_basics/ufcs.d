@@ -12,7 +12,6 @@ void main(){
 	// Observe how argument was moved
 	//          .------------------- ([1,2,3])
 	//          v
-	auto ufcs = [1,2,3].map!(a=> a*2);
-	writeln(ufcs);
+	[1,2,3].map!(a=> a*2).writeln;
 
 }
