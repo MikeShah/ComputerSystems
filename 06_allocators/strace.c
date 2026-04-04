@@ -1,11 +1,20 @@
 // @file: strace.c
+// gcc -g -Wall strace.c -o prog
+#include <stdlib.h>
 #include <stdio.h>
 
 int main(){
 
-	printf("Hello\n");
+		int* alloc= malloc(5000000);		
 
-	char* chars = malloc(50000000);
+		for(int i=0; i< 500; i++){
+				int* allocate = malloc(50000);		
+				free(allocate);
+		}
 
-	return 0;
+  	free(alloc);
+	
+	return 0;	
 }
+
+
