@@ -4,10 +4,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <semaphore.h> // new library!
+#include <pthread.h>
 
 sem_t sem;
 
 void *threadA(void *vargp){
+        sleep(2);
         printf("Hello from thread A\n");
         sem_post(&sem);
         return NULL;
@@ -23,7 +25,7 @@ int main(){
 
         pthread_t tids[2];
         // Initialize a binary semaphore
-        sem_init(&sem,0,1);
+        sem_init(&sem,0,0);
         // Create our threads
         pthread_create(&tids[0],NULL,threadA,NULL);
         pthread_create(&tids[1],NULL,threadB,NULL);
