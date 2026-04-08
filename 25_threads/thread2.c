@@ -1,15 +1,17 @@
 // Compile with:
 //
-// clang -lpthread thread2.c -o thread2
+// gcc thread2.c -o prog -lpthread
 //
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <unistd.h>
 
 #define NTHREADS 10
 
 // Thread with variable arguments
 void *thread(void *vargp){
+      sleep(1);
         printf("Hello from thread %ld\n", pthread_self());
         return NULL;
 }
